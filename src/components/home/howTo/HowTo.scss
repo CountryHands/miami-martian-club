@@ -1,0 +1,17 @@
+.how-to {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	> div {
+		padding: 1rem 0;
+		
+		h3 {
+			padding-bottom: 1rem;
+		}
+		
+		p {
+			padding-left: 2rem;
+			color: white;
+		}
+	}
+}

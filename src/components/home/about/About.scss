@@ -1,0 +1,35 @@
+.about.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 1280px) {
+		flex-direction: row;
+	}
+
+	p {
+		color: white;
+		font-size: 1.5rem;
+		margin-top: 3rem;
+		width: 100%;
+
+		@media (min-width: 720px) {
+			width: 80%;
+		}
+	}
+
+	img {
+		width: 320px;
+		height: 320px;
+		padding-top: 2rem;
+
+		@media (min-width: 720px) {
+			width: 588px;
+			height: 588px;
+		}
+
+		@media (min-width: 1280px) {
+			padding-top: 0;
+		}
+	}
+}

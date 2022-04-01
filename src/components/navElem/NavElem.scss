@@ -1,0 +1,129 @@
+.main-nav {
+	background-color: rgba($color: #000000, $alpha: 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 6.4rem;
+	z-index: 997;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.show {
+		height: 100vh;
+		background-color: rgba($color: #000000, $alpha: 0.8);
+		.bar1,
+		.bar2,
+		.bar3 {
+			background-color: #fff;
+		}
+	}
+	@media (min-width: 960px) {
+		height: 6.4rem;
+	}
+	> nav {
+		padding-left: 0;
+		.btn.green,
+		.btn.teal {
+			margin-top: 0;
+		}
+	}
+	nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		flex-flow: row wrap;
+		@media (min-width: 960px) {
+			flex-flow: row nowrap;
+		}
+		img {
+			margin-right: auto;
+			height: 4.8rem;
+			width: auto;
+			order: 1;
+		}
+		ul {
+			list-style: none;
+			display: none;
+			width: 100%;
+			order: 2;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			&.show {
+				display: flex;
+				height: 80vh;
+			}
+			@media (min-width: 960px) {
+				margin-left: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			li {
+				margin-right: 1.6rem;
+				&:not(.mint) {
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+				padding: 1rem;
+				@media (min-width: 960px) {
+					padding: 0;
+				}
+				a {
+					color: white;
+					font-size: 1.3rem;
+					font-weight: 700;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+				button {
+				}
+			}
+		}
+	}
+	.container {
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: center;
+		cursor: pointer;
+		order: 1;
+		@media (min-width: 960px) {
+			display: none;
+		}
+	}
+	.bar1,
+	.bar2,
+	.bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #fff;
+
+		transition: 0.4s;
+	}
+
+	.bar2 {
+		margin: 6px 0;
+	}
+	/* Rotate first bar */
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+	/* Fade out the second bar */
+	.change .bar2 {
+		opacity: 0;
+	}
+	/* Rotate last bar */
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+	.logo {
+		margin-left: 1rem;
+		height: 7rem;
+		width: 7rem;
+	}
+}

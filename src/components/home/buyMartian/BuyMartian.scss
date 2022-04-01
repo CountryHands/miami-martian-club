@@ -1,0 +1,28 @@
+.buy-martian {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	h3 {
+		width: 100%;
+		text-align: center;
+	}
+	> div {
+		width: 100%;
+		margin: 1rem auto;
+
+		@media (min-width: 720px) {
+			margin: 4rem auto;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center;
+			margin-top: 2rem;
+			.btn {
+				font-size: 2rem;
+				margin: 2rem;
+			}
+		}
+	}
+}

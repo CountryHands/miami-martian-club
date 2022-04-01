@@ -1,0 +1,11 @@
+.dao {
+	width: 100%;
+	p {
+		margin: 2rem;
+		color: rgba(255, 255, 255, 0.5);
+	}
+	> div {
+		display: flex;
+		justify-content: center;
+	}
+}
