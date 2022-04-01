@@ -1,6 +1,6 @@
 .header {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   // background-image: url("../../../images/background-pic.jpg");
   // background-size: cover;
   // background-position: center;
@@ -41,7 +41,7 @@
 
   .video-wrapper {
     position: relative;
-    width: 100vw;
+    width: 100rem;
     height: 100rem;
     text-align: center;
     display: flex;
@@ -49,5 +49,11 @@
     justify-content: center;
   }
 
+  @media only screen and (max-width: 768px) {
+    .video-wrapper {
+      max-width: 44rem;
+      max-height: 85rem;
+    }
+  }
 
 }
